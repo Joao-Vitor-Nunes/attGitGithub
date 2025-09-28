@@ -1,45 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade de Git e GitHub</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Git e GitHub - Guia Rápido</title>
+  <meta name="description" content="Aprenda de forma prática o que são Git e GitHub, suas diferenças e como usá-los no dia a dia de desenvolvimento de software.">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Fonte -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1 class="text-center">Bem-vindo à minha atividade de Git e GitHub!</h1>
-    </header>
+  <header class="header">
+    <nav class="navbar">
+      <h1 class="logo">Blog Dev</h1>
+      <ul class="menu">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#ferramentas">Ferramentas</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h2>Bem-vindo ao meu blog sobre Git e GitHub</h2>
+      <p>Descubra como essas ferramentas revolucionaram o mundo do desenvolvimento de software.</p>
+    </div>
+  </header>
 
-    <main>
-        <div>
-            <h3 class="title">O que são essas ferramentas ?</h3>
-            <a href="https://git-scm.com"><img src="/img/git.png" alt="icon git" class="git"></a>
-            <a href="https://github.com"><img src="/img/github.png" alt="icon github" class="github"></a>
-        </div>
-    </main>
+  <main>
+    <article id="sobre" class="content">
+      <h2>O que são Git e GitHub?</h2>
+      <p>
+        <strong>Git</strong> é um sistema de controle de versão distribuído criado por Linus Torvalds. Ele permite que desenvolvedores acompanhem mudanças no código e colaborem em projetos.
+      </p>
+      <p>
+        <strong>GitHub</strong> é uma plataforma online que hospeda repositórios Git e facilita a colaboração, oferecendo recursos como issues, pull requests e integração contínua.
+      </p>
+    </article>
 
-    <footer>
-        <p class="text-center">Feito por João Vitor</p>
-    </footer>
+    <section id="ferramentas" class="ferramentas">
+      <h2>Principais Ferramentas</h2>
+      <div class="ferramentas-grid">
+        <figure>
+          <a href="https://git-scm.com" target="_blank" rel="noopener noreferrer">
+            <img src="/img/git.png" alt="Logo oficial do Git" class="git">
+          </a>
+          <figcaption>Controle de versão distribuído</figcaption>
+        </figure>
 
-<script>
-      document.addEventListener("DOMContentLoaded", () => {
+        <figure>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+            <img src="/img/github.png" alt="Logo oficial do GitHub" class="github">
+          </a>
+          <figcaption>Plataforma de hospedagem de código</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
 
-        const git = document.querySelector(".git");
-        const github = document.querySelector(".github");
+  <footer id="contato" class="footer">
+    <p>&copy; 2025 - Desenvolvido por João Vitor. Todos os direitos reservados.</p>
+    <p><a href="mailto:seuemail@exemplo.com">Contato</a></p>
+  </footer>
 
-        setTimeout(() => {
-          if (git) git.classList.add("show");
-          if (github) github.classList.add("show");
-        }, 300);
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const git = document.querySelector(".git");
+      const github = document.querySelector(".github");
 
-      });
-</script>
-
+      setTimeout(() => {
+        git?.classList.add("show");
+        github?.classList.add("show");
+      }, 300);
+    });
+  </script>
 </body>
-
 </html>
