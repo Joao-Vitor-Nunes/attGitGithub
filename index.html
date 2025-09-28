@@ -14,6 +14,27 @@
         <h1 class="text-center">Bem-vindo à minha atividade de Git e GitHub!</h1>
     </header>
 
-    
+    <main>
+        <div>
+            <img src="/img/git.png" alt="icon git" class="git">
+            <img src="/img/github.png" alt="icon github" class="github">
+        </div>
+    </main>
+
+<script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Animação do git
+        const git = document.querySelector(".git");
+        const brandOverlay = document.querySelector(".brand-overlay");
+
+        setTimeout(() => {
+          if (git) git.classList.add("show");
+          if (brandOverlay) brandOverlay.classList.add("show");
+        }, 300);
+
+      });
+</script>
+
 </body>
+
 </html>

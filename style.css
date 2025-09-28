@@ -14,3 +14,19 @@
     color: #3B0270;
     text-align: center;
 }
+
+.git {
+  max-width: 300px;
+  width: 70%;
+  opacity: 0;
+  transform: translateY(200px) scaleX(-1) rotate(-10deg);
+  transition: transform 1s ease, opacity 1s ease;
+  position: relative;
+  z-index: 2;
+  position: relative;
+}
+
+.git.show {
+  opacity: 1;
+  transform: translateX(0) scaleX(-1) rotate(-10deg);
+}
