@@ -1,4 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    background-color: #FFF1F1;
+} 
+ 
+ header {
+    margin-top: 50px;
+}
+
  header h1 {
-    color: #6610f2;
+    color: #3B0270;
     text-align: center;
 }
